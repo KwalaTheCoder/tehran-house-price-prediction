@@ -1,0 +1,141 @@
+{
+  "project": "house-prices",
+  "task": "regression",
+  "seed": 42,
+  "folds": 5,
+  "scoring": "neg_mean_absolute_error",
+  "cv_selection_score": -1503431922.103744,
+  "selected_model": "ExtraTreesRegressor",
+  "leaderboard": [
+    {
+      "model": "DummyRegressor",
+      "parameters": {},
+      "cv_score": -4546520434.055565,
+      "cv_std": 239443268.11458993
+    },
+    {
+      "model": "Ridge",
+      "parameters": {
+        "model__alpha": 0.1
+      },
+      "cv_score": -2752115541.8782687,
+      "cv_std": 172734478.77176136
+    },
+    {
+      "model": "Ridge",
+      "parameters": {
+        "model__alpha": 1
+      },
+      "cv_score": -2745533123.2895427,
+      "cv_std": 176322492.17000845
+    },
+    {
+      "model": "Ridge",
+      "parameters": {
+        "model__alpha": 10
+      },
+      "cv_score": -2873951601.446552,
+      "cv_std": 190690002.990985
+    },
+    {
+      "model": "RandomForestRegressor",
+      "parameters": {
+        "model__max_depth": null,
+        "model__min_samples_leaf": 2
+      },
+      "cv_score": -1772113739.8716323,
+      "cv_std": 199929335.94038764
+    },
+    {
+      "model": "RandomForestRegressor",
+      "parameters": {
+        "model__max_depth": null,
+        "model__min_samples_leaf": 5
+      },
+      "cv_score": -2095896070.5608757,
+      "cv_std": 167811436.51553047
+    },
+    {
+      "model": "RandomForestRegressor",
+      "parameters": {
+        "model__max_depth": 12,
+        "model__min_samples_leaf": 2
+      },
+      "cv_score": -2112015013.010915,
+      "cv_std": 210870960.2433666
+    },
+    {
+      "model": "RandomForestRegressor",
+      "parameters": {
+        "model__max_depth": 12,
+        "model__min_samples_leaf": 5
+      },
+      "cv_score": -2229874055.027621,
+      "cv_std": 149186869.90429345
+    },
+    {
+      "model": "ExtraTreesRegressor",
+      "parameters": {
+        "model__max_depth": null,
+        "model__min_samples_leaf": 2
+      },
+      "cv_score": -1503431922.103744,
+      "cv_std": 88517997.50463507
+    },
+    {
+      "model": "ExtraTreesRegressor",
+      "parameters": {
+        "model__max_depth": null,
+        "model__min_samples_leaf": 5
+      },
+      "cv_score": -1796968671.7935276,
+      "cv_std": 70149115.38539216
+    },
+    {
+      "model": "ExtraTreesRegressor",
+      "parameters": {
+        "model__max_depth": 12,
+        "model__min_samples_leaf": 2
+      },
+      "cv_score": -2010083531.5571156,
+      "cv_std": 102125742.17556292
+    },
+    {
+      "model": "ExtraTreesRegressor",
+      "parameters": {
+        "model__max_depth": 12,
+        "model__min_samples_leaf": 5
+      },
+      "cv_score": -2163560396.15737,
+      "cv_std": 106228447.21225291
+    }
+  ],
+  "holdout": {
+    "mae": 1776991450.6772828,
+    "rmse": 5161079437.763136,
+    "r2": 0.6266604121470185
+  },
+  "train_rows": 2789,
+  "test_rows": 690,
+  "input_rows": 3479,
+  "missing_target_rows_removed": 0,
+  "missing_predictor_rows_removed": 0,
+  "grouped_split": true,
+  "group_column": null,
+  "features": [
+    "Area",
+    "Room",
+    "Parking",
+    "Warehouse",
+    "Elevator",
+    "Address"
+  ],
+  "data_fingerprint": "98079e8298bfb1d497c6050c4a32dd024e7d4956463e71b88e152cb323af85b5",
+  "versions": {
+    "python": "3.12.14",
+    "sklearn": "1.8.0",
+    "pandas": "2.2.3",
+    "numpy": "2.3.5"
+  },
+  "note": "CV scores select the model and are optimistic; holdout metrics are the final evaluation. Negative MAE scores are higher-is-better. Synthetic tests are not real-data benchmarks."
+}

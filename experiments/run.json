@@ -1,0 +1,10 @@
+{
+  "project": "tehran-house-price-prediction",
+  "exit_code": 0,
+  "seconds": 41.3,
+  "data_file": "House/1632300362534233.csv",
+  "data_sha256": "fbf022a1cad47163cef93b0b60bc7beddc8258b90f227aea2eab6d76544f70fd",
+  "tuned": true,
+  "folds": 5,
+  "seed": 42
+}

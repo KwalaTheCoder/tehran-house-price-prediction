@@ -2,6 +2,10 @@
 
 Standalone refactor of **KwalaTheCoder's independently written HouseJadi.ipynb**. The original work is preserved in `legacy/`; the modern implementation is AI-assisted. See `PROVENANCE.json` for provenance and source hashes.
 
+## Measured evaluation
+
+See [RESULTS.md](RESULTS.md) for the locked real-data experiment, exact input hash, holdout metrics, CV baseline and limitations.
+
 ## What changed
 
 Removes price-per-meter and alternate-currency price leakage. Parses comma-separated Area values, retains neighborhood and boolean amenities, and handles unseen addresses. R2 uses y_true first. No target/correlation-based pruning touches the holdout. Random holdout does not measure price changes over time or unseen-neighborhood generalization.
@@ -10,7 +14,7 @@ Removes price-per-meter and alternate-currency price leakage. Parses comma-separ
 
 CSV with Price, Area, Address, Room, Parking, Warehouse and Elevator when available. Alternate currency prices are never predictors. Pass --group-column with a property identifier for repeated listings.
 
-Data is not included in the source repository. Obtain the original dataset legally and verify its provenance, schema and license. No real-data accuracy claim is made. Missing labels are removed and counted in the report; missing predictors are imputed. Do not add identifiers, post-outcome fields or target-derived columns as predictors. Columns beyond the documented schema require manual leakage review.
+Data is not included in the source repository. Obtain the original dataset legally and verify its provenance, schema and license. Measured results on the supplied dataset are documented in [RESULTS.md](RESULTS.md). Missing labels are removed and counted in the report; missing predictors are imputed. Do not add identifiers, post-outcome fields or target-derived columns as predictors. Columns beyond the documented schema require manual leakage review.
 
 ## Run
 
