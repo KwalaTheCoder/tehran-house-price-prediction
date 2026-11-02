@@ -1,0 +1,13 @@
+{
+  "domain": "house-prices",
+  "task": "regression",
+  "targets": [
+    "Price"
+  ],
+  "exclude": [
+    "Price(USD)",
+    "Price_Per_Meter(USD)",
+    "Price_Per_Meter",
+    "Price_per_meter"
+  ]
+}
